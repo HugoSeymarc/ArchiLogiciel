@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ajout carte</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+
+</head>
+
+<body>
+    <form class="form" th:action="@{/addCard}" th:object="${cardForm}" method="POST">
+        <fieldset>
+            <legend>Add your Card ! </legend>
+            <div>
+                <label for="form-name">Name</label>
+                <div>
+                    <input id="form-name" type="text" placeholder="Card name..." th:field="*{name}">
+                </div>
+            </div>
+            <div>
+                <label for="form-description">Description</label>
+                <div>
+                    <textarea id="form-description" placeholder="Description..." th:field="*{description}"></textarea>
+                </div>
+                <label for="form-family">Family</label>
+                <div>
+                    <input id="form-family" type="text" placeholder="Family..." th:field="*{family}">
+                </div>
+                <label for="form-affinity">Affinity</label>
+                <div>
+                    <input id="form-affinity" type="text" placeholder="Affinity..." th:field="*{affinity}">
+                </div>
+                <label for="form-imgUrl">Image URL</label>
+                <div>
+                    <input id="form-imgUrl" type="text" placeholder="Image..." th:field="*{imgUrl}">
+                </div>
+                <label for="form-energy">Energy</label>
+                <div>
+                    <input id="form-energy" type="text" placeholder="Energy..." th:field="*{energy}">
+                </div>
+                <label for="form-hp">HP</label>
+                <div>
+                    <input id="form-hp" type="text" placeholder="HP..." th:field="*{hp}">
+                </div>
+                <label for="form-defence">Defence</label>
+                <div>
+                    <input id="form-defence" type="text" placeholder="Defence..." th:field="*{defence}">
+                </div>
+                <label for="form-attack">Attack</label>
+                <div>
+                    <input id="form-attack" type="text" placeholder="Attack..." th:field="*{attack}">
+                </div>
+                <label for="form-price">Price</label>
+                <div>
+                    <input id="form-price" type="text" placeholder="Price..." th:field="*{price}">
+                </div>
+            </div>
+            <div>
+                <input type="submit" class="uk-button uk-button-default" value="Create" />
+            </div>
+
+        </fieldset>
+    </form>
+    <a href="/">Retour à l'accueil</a>
+
+</body>
+
+<style>
+    .form {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 8%;
+    }
+</style>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Carte ajouté</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+</head>
+<body>
+    <div>
+        <img th:src="${card.imgUrl}" alt="">
+
+        <h3 th:utext="${card.name}">...</h3>
+
+        <h5 th:text="'Description:  '+${card.description}">...</h5>
+        <h5 th:text="'Family:  '+${card.family}">...</h5>
+        <h5 th:text="'Affinity:  '+${card.affinity}">...</h5>
+        <h5 th:text="'Energy:  '+${card.energy}">...</h5>
+        <h5 th:text="'HP:  '+${card.hp}">...</h5>
+        <h5 th:text="'Defence:  '+${card.defence}">...</h5>
+        <h5 th:text="'Attack:  '+${card.attack}">...</h5>
+        <h5 th:text="'Price:  '+${card.price}">...</h5>
+    </div>
+    <a href="/">Retour à l'accueil</a>
+</body>
+</html>
