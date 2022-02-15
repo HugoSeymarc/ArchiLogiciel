@@ -97,14 +97,14 @@ Un Web Container en JEE est la partie ou les informations web classiques comme l
 
 ## Qu’est ce que Springboot ? quelles différences avec JEE ?
 
-Springboot est un framework conçu pour simplifier le démarrage et le développement de nouvelles applications en évitant au développeur de redéfinir la même configuration à plusieurs endroits du code.
+Springboot permet d'être extraordinairement productif dans la construction de son API : il permet de se concentrer sur la partie métier de son application en laissant de côté toute la complexité de la création d'une API.
 
 Sur Springboot, il est plus facile et plus rapide de déployer des API de web services alors que sur JEE, le déploiement des API de web services est plus complexe.
 
 
 ## Qu’apporte Thymeleaf à Springboot ?
 
-Thymeleaf apporte à Springboot un moteur de templating qui peut être utilisé pour remplacer JSP. Il permet de travailler à la fois sur la View et sur le Model.
+Thymeleaf apporte à Springboot un moteur de templating permettant de générer du XML/XHTML/HTML5. Son but principal est d'être utilisé dans un environnement web pour la génération de vue pour les applications web basées sur le modèle MVC
 
 
 ## Que signifie l’annotation @Controller, pourquoi est-elle importante lors de la génération de pas coté serveur ?
