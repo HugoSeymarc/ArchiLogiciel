@@ -1,12 +1,14 @@
 # Rendu 
 
+LIEN REPO GIT : https://github.com/HugoSeymarc/ArchiLogiciel
+
 ---
 
     Membres du groupe :
     -   ALBOUY Leo
     -   SEYMARTC Hugo
     -   DIB Nassim
-    -   DE ULIIS Lorenzo
+    -   DE IULIIS Lorenzo
 
 Eléments réalisés du cahier des charges :
 
@@ -16,7 +18,7 @@ Eléments réalisés du cahier des charges :
             (Cependant un problème survient lors de l'envoie des données, en effet notre requete est annulée à chaque fois (voir capture en dessous))
 
 
-<img src=./requestError.png>
+<img src=./1_atelier/1_atelier_statique/requestError.png>
 
     En utilisant le Web dynamique :
         - Realisation d'un nouveau formulaire

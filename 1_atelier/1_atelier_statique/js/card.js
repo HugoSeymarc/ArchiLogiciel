@@ -12,7 +12,7 @@ function err_callback(error) {
     console.log(error);
 }
 
-function getRandomInt(max) {
+function getRandomInt(max) { // DOnne un nombre aleatoire
     return Math.floor(Math.random() * max);
 }
 
@@ -24,7 +24,7 @@ function callback(data) {
 
     for (const card of data) {
 
-        comment = getRandomInt(1000);
+        comment = getRandomInt(1000); // Permet de donner des valeurs aleatoires aux variables qui n'en ont pas
         like = getRandomInt(1000);
         date = getRandomInt(250) + "h";
 
