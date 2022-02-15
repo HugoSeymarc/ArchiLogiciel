@@ -8,7 +8,7 @@ LIEN REPO GIT : https://github.com/HugoSeymarc/ArchiLogiciel
     -   ALBOUY Leo
     -   SEYMARTC Hugo
     -   DIB Nassim
-    -   DE ULIIS Lorenzo
+    -   DE IULIIS Lorenzo
 
 Eléments réalisés du cahier des charges :
 
