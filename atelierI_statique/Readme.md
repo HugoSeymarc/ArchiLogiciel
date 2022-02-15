@@ -10,13 +10,32 @@
 
 Eléments réalisés du cahier des charges :
 
+    En utilisant l'API + Web statique :
+        - Creation d'une page d'affichage des cartes
+        - Creation d'un formulaire de saisie d'information pour la création d'une nouvelle carte
+            (Cependant un problème survient lors de l'envoie des données, en effet notre requete est annulée à chaque fois (voir capture en dessous))
+
+
+<img src=./requestError.png>
+
+    En utilisant le Web dynamique :
+        - Realisation d'un nouveau formulaire
+        - Realisation de l'affichage de carte en simulant des données dans le programme
+  
+
 Eléments non-réalisés du cahier des charges :
+
+    -/-
 
 Eléments réalisés en plus du cahier des charges :
 
+    -/-
+
 ---
 
+## Après avoir expliqué en quoi vos prototypes respectent le pattern MVC, expliquer les avantages et inconvénients des approches Web Statique + Web Service et Dynamique.
 
+Léo
 
 ## Qu’est-ce que le pattern MVC ? Quels avantages présente-t-il ?
 
@@ -27,8 +46,6 @@ Le pattern MVC est une façon d’organiser le code en 3 piliers :
 - La View, qui représente l’interface graphique qui sera utilisé et vue par le client
 
 - Le Controller, qui fait le lien entre le Model et la View et implémente les changements dans la View dans le Model.
-
-  
 
 Ce pattern permet une bien meilleure organisation du code en le fragmentant en fonction du rôle qu’il a (graphique, structure de données, lien entre les deux…) et par conséquent une meilleure gestion des erreurs dans le codes. Par exemple, si une erreur survient dans l’affichage de l’interface, il faudra chercher dans la partie View pour régler le problème.
 
