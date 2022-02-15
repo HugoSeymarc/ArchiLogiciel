@@ -35,7 +35,28 @@ Eléments réalisés en plus du cahier des charges :
 
 ## Après avoir expliqué en quoi vos prototypes respectent le pattern MVC, expliquer les avantages et inconvénients des approches Web Statique + Web Service et Dynamique.
 
-Léo
+Pour le prototype dynamique, nous avons bien notre pattern MVC avec le dossier "model" qui contient la structure des données de notre application pour ajouter les cartes. Ensuite nous avons le dossier "controller" pour toutes les actions et notre vue qui se retrouve dans le dossier "templates". 
+
+Pour le web statique, l'application représente la vue et le model/controller est géré par le web service.
+
+### Web statique :
+
+Avantages :
+- flexible
+- temps de chargement rapide
+
+Inconvénient :
+- contenu stagnant si il n'est pas mis à jour
+
+### Web dynamique :
+
+Avantages :
+- bonne maintenance
+- facilité de changement de contenu
+
+Inconvénient :
+- conception plus complexe
+
 
 ## Qu’est-ce que le pattern MVC ? Quels avantages présente-t-il ?
 
@@ -104,7 +125,7 @@ Sur Springboot, il est plus facile et plus rapide de déployer des API de web se
 
 ## Qu’apporte Thymeleaf à Springboot ?
 
-Thymeleaf apporte à Springboot un moteur de templating permettant de générer du XML/XHTML/HTML5. Son but principal est d'être utilisé dans un environnement web pour la génération de vue pour les applications web basées sur le modèle MVC
+Thymeleaf apporte à Springboot un moteur de templating permettant de générer du XML/XHTML/HTML5. Son but principal est d'être utilisé dans un environnement web pour la génération de vue pour les applications web basées sur le modèle MVC. On peut alors facilement gérer les rendu de notre vue pour eviter de rajouter du code en dur sur notre application.
 
 
 ## Que signifie l’annotation @Controller, pourquoi est-elle importante lors de la génération de pas coté serveur ?
