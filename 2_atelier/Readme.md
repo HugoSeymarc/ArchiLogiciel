@@ -64,3 +64,49 @@ Un servlet a trois étapes:
 - La création
 - l'initialisation
 - La destruction
+
+## Expliquer  la philosophie «  Convention over Configuration  » de Spring boot  ?
+
+La philosophie de Spring Boot est de limite le temps passé dans les tâches chronophages et à faible valeur ajoutée comme la création des Entity, des CRUD, et plutôt se concentrer sur l’écriture des méthodes fonctionnelles qui permettent à l'application de fonctionner. 
+
+## Expliquer ce qu’il se passe lors de l’exécution  «SpringApplication.run(App.class,args)  »
+
+La classe SpringApplication, qui contient la méthode SpringApplication.run(App.class,args) de Spring Boot est utilisée pour amorcer et lancer une application Spring à partir d'une méthode principale Java. Cette classe crée automatiquement l'ApplicationContext à partir du classpath, analyse les classes de configuration et lance l'application.
+
+## Qu’est ce qu’un DAO  ? En quoi est-ce intéressant d’utiliser ce pattern  ? Qu’est ce qu’un Singleton  ? Que permet de réaliser les Entity dans Spring boot  ? Est-ce spécifique à SpringBoot  ?
+
+Le pattern DAO (Data Access Object) est un pattern qui permet d'isoler la couche application/métier de la couche de persistance (généralement une base de données relationnelle) à l'aide d'une API abstraite.
+Il est intéressant d'utiliser ce pattern car cela permet aux deux parties de fonctionner sans savoir visibilité nécessaire sur l'autre. ce système occulte également toute la complexité de l'utilisation de méthodes de CRUD.
+
+Un Singleton est un algorithme qui ne s’exécute qu'une seule fois. 
+
+Les Entity représentent les Tables dans la base de données, elles contiennent les méthodes utilisées et les données. 
+Ce n'est pas spécifique à SpringBoot, le même principe est retrouvé dans la plupart des langages de POO (Programmation Orienté Objet). 
+
+## Combien d’instances avez-vous crées lors de l’usage de «Service  » en Spring  boot? Pourquoi  ?
+
+pas encore à la 
+
+## Que fournit le CRUD Repository de Spring boot  ? Que sont les CRUD  ?
+
+Le CRUD Repository fournit, une fois un mini cahier des charges remplis, les classes correspondantes au requêtes de bases nécessaire pour Create, Read, Update, Delete dans les entités Java. 
+Les CRUD sont des méthodes qui contiennent des requêtes SQL permettant de travailler avec la base de données. 
+
+## Qui réalise l’implémentation de la méthode findByProperty lors de la création d’un repository en  Spring Boot  ?
+
+Les méthodes CRUD, dont findByProperty, sont instanciées par SpringBoot.
+
+## Comment gère -t-on les relations One To One, One to Many et Many to Many avec JPA ?
+
+Les relations 1-1 sont mises en place avec "@OneToOne",  L’annotation @OneToOne implique que la table contient une colonne qui est une clé étrangère qui fait référence à une colonne d'une autre table. Dans le cas d'une liaison 1-1 cela veut dire qu'une donnée de la colonne A de la table A fait référence à au plus 1 élément de la colonne B de la table B.
+
+Les relations One to Many sont un mise en place avec "@OneToMany", l'annotation @OneToMany veut dire que les tables contiennent une colonne clé étrangère qui fait référence à une colonne d'une autre table. Dans le cas d'une liaison 1-N nous avons une donnée de la colonne A de la table A qui fait référence à une ou plusieurs colonnes de la colonne B de la table B 
+
+Les relations Many to Many sont un mise en place avec "@ManyToMany", l'annotation @ManyToMany veut dire que les tables contiennent une colonne clé étrangère qui fait référence à une colonne d'une autre table. Dans le cas d'une liaison N-N nous avons une ou plusieurs donnée de la colonne A de la table A qui fait référence à une ou plusieurs colonnes de la colonne B de la table B.
+
+## Qu’est ce qu’une Architecture SOA ? Qu’est ce qu’une architecture Micro Service ? Il y a-t-il d’autres architectures existantes ? Quels sont leurs avantages/inconvénients ?
+
+Une architecture SOA est une architecture applicative orientée services, son objectif est d'avoir une forte cohérence interne entre les différents services utilisés. 
+De son coté l'architecture Micro Service permet d'avoir plusieurs services avec un faible couplage, qui utilisent des APIs pour communiquer. 
+Il existe par exemple l'architecture centrée sur les données, ou l’élément central est le un serveur de données et un SGDB (Système de Gestion de Bases de Données.
+Cette architecture a comme force son utilisation de données simple et efficace mais par contre va placer les services et le "cœur" du projet un peu derrière en performances et utilisation. 
