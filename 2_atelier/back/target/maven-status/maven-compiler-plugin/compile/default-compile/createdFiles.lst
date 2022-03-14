@@ -1,0 +1,11 @@
+com\app\service\UserService.class
+com\app\entity\Card.class
+com\app\service\MarketService.class
+com\app\controller\UserRestCrt.class
+com\app\repository\CardRepository.class
+com\app\service\CardService.class
+com\app\controller\CardRestCrt.class
+com\app\App.class
+com\app\entity\User.class
+com\app\controller\MarketRestCrt.class
+com\app\repository\UserRepository.class
