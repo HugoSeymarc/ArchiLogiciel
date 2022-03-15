@@ -26,8 +26,11 @@
                 <span id="userNameId">Jdoe</span>
                 <div class="sub header"><span>5000</span>$</div>
             </div>
+            <a onclick="logout()">Logout</a>
         </h3>
-
+        <button class="ui button" onclick="window.location = '/index.html'">Dashboard</button>
+        <button class="ui button" onclick="window.location = '/formCard.html'"> Add card </button>
+        <button class="ui button" onclick="window.location = '/formLogin.html'"> Login </button>
         <h3 class="ui left floated header">
             <i class="money icon"></i>
             <div class="content">
@@ -39,7 +42,7 @@
 
 
     <div class="ui grid">
-        <div class="ten wide column">
+        <div class="wide column">
             <!--  <h3 class="ui center aligned header"> My Card List</h3> -->
             <h3 class="ui aligned header"> My Card List</h3>
             <!------------------------------------------------------------------------->
@@ -87,15 +90,6 @@
                 </tbody>
             </table>
         </div>
-        <div class=" five wide column">
-
-            <!------------------------------------------------------------------------->
-            <!--    ----------------------------- CARD ----------------------------- -->
-            <!------------------------------------------------------------------------->
-            <div id="card"></div>
-
-        </div>
-
     </div>
 
     <!-- Modal -->
@@ -116,13 +110,14 @@
 
     <script src="../lib/jquery-3.3.1.min.js"></script>
     <script src="../lib/Semantic-UI-CSS-master/semantic.js"></script>
-    <script src="./js/cardList.js"></script>
+    <script src="./js/sell.js"></script>
     <script src="./js/market.js"></script>
 
     <script>
-        $(function() {
-            $("#card").load("./part/card-full.html");
-        });
+        function logout() {
+            localStorage.removeItem('user')
+            window.location = '/index.html'
+        }
     </script>
 
 </body>

@@ -17,25 +17,25 @@
 </head>
 
 <body>
-    <div class="ui pointing menu">
-        <a class="item">
-                Home
-            </a>
-        <a class="item">
-                Messages
-            </a>
-        <a class="item active">
-                Friends
-            </a>
-        <div class="right menu">
-            <div class="item">
-                <div class="ui transparent icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search link icon"></i>
-                </div>
+    <div class="ui clearing segment">
+        <h3 class="ui right floated header">
+            <i class="user circle outline icon"></i>
+            <div class="content">
+                <span id="userNameId">Jdoe</span>
+                <div class="sub header"><span>5000</span>$</div>
             </div>
-        </div>
+            <a onclick="logout()">Logout</a>
+        </h3>
+        <button class="ui button" onclick="window.location = '/index.html'">Dashboard</button>
+        <h3 class="ui left floated header">
+            <i class="shopping cart icon"></i>
+            <div class="content">
+                Buy
+                <div class="sub header">Buy a card</div>
+            </div>
+        </h3>
     </div>
+
     <div class="ui segment">
         <div class="ui five column grid" id="gridContainer">
             <template id="selectedCard">
@@ -46,13 +46,13 @@
                                     <div class="ui grid">
                                         <div class="three column row">
                                             <div class="column">
-                                                <i class="heart outline icon"></i><span id="cardHPId">{{like}}</span>
+                                            
                                             </div>
                                             <div class="column">
                                                 <h5>{{familyName}}</h5>
                                             </div>
                                             <div class="column">
-                                                <span id="energyId">{{energy}}</span> <i class="lightning icon"></i>
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -128,8 +128,14 @@
 
     <script src="../lib/jquery-3.3.1.min.js"></script>
     <script src="../lib/Semantic-UI-CSS-master/semantic.js "></script>
-    <script src="./js/card.js "></script>
+    <script src="./js/buy.js "></script>
     <script src="./js/market.js "></script>
+    <script>
+        function logout() {
+            localStorage.removeItem('user')
+            window.location = '/index.html'
+        }
+    </script>
 
 </body>
 

@@ -27,7 +27,7 @@ function userLogin() {
 function callbackUserLogin(response) {
     console.log('login', response.status)
     if (response.status === 200) {
-        localStorage.setItem('user', response.response)
+        localStorage.setItem('user',  JSON.stringify(response.response))
         window.location = '/index.html'
     } else {
         console.log('aie', response.response.message)

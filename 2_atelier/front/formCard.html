@@ -63,12 +63,18 @@
                     <label>Price</label>
                     <input type="text" name="price" placeholder="price">
                 </div>
-                <button onclick="createCard()" class="ui button" type="button">Submit</button>
+                <button onclick="addCard()" class="ui button" type="button">Submit</button>
             </form>
         </div>
     </div>
 
     <script src="js/formCard.js"></script>
+    <script>
+        function addCard() {
+            createCard()
+            window.location = '/index.html'
+        }
+    </script>
 </body>
 
 </html>

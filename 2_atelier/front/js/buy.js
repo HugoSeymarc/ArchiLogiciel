@@ -14,11 +14,6 @@ function err_callback(error) {
     console.log(error);
 }
 
-function getRandomInt(max) { // DOnne un nombre aleatoire
-    return Math.floor(Math.random() * max);
-}
-
-
 function callback(data) {
 
 
@@ -28,12 +23,10 @@ function callback(data) {
     for (const card of data) {
 
         console.log(card)
-        like = getRandomInt(1000);
 
         let clone = document.importNode(template.content, true);
 
         newContent = clone.firstElementChild.innerHTML
-            .replace(/{{energy}}/g, card.energy)
             .replace(/{{name}}/g, card.name)
             .replace(/{{imgUrl}}/g, card.imgSrc)
             .replace(/{{description}}/g, card.description)
@@ -43,7 +36,6 @@ function callback(data) {
             .replace(/{{defence}}/g, card.defence)
             .replace(/{{attack}}/g, card.attack)
             .replace(/{{price}}/g, card.price)
-            .replace(/{{like}}/g, like)
             .replace(/{{id}}/g, card.id);
         clone.firstElementChild.innerHTML = newContent;
 

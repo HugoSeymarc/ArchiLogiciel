@@ -28,7 +28,15 @@ public class CardService {
 	}
 
 	public List<Card> getCards() {
-		return cRepository.findAll();
+		List<Card> cL = new ArrayList<Card>();
+		for (Card c : cRepository.findAll()) {
+			if(c.getUser() == null) {
+				cL.add(c);
+			}
+		}
+
+		return cL;
+
 	}
 
 	public Collection<Card> getUserCards(int id) {

@@ -31,18 +31,20 @@ public class MarketService {
         Optional<User> uOpt = uRepository.findById(m.getUser().getId());
 		User u = uOpt.get();
 
-        
-        m.setType("buy");
-        m.setDate(new Date());
-        c.setUser(u);
-        m.setUser(u);
-        
-        User u2 = c.getUser();
-        u2.setAmount(u2.getAmount() + c.getPrice());
-        u.setAmount(u.getAmount() - c.getPrice());
-        m.setCard(c);
-
-        return mRepository.save(m);
+        if(m.getUser().getAmount() >= c.getPrice()){
+            m.setType("buy");
+            m.setDate(new Date());
+            c.setUser(u);
+            m.setUser(u);
+            
+            User u2 = c.getUser();
+            u2.setAmount(u2.getAmount() + c.getPrice());
+            u.setAmount(u.getAmount() - c.getPrice());
+            m.setCard(c);
+            
+            return mRepository.save(m);
+        }
+        return null;
 	}
 
     public Market sell(Market m) {
