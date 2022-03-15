@@ -35,6 +35,8 @@ function buy() {
             console.log(data)
         });
 
+    refresh()
+
 }
 
 function sell() {
@@ -67,5 +69,9 @@ function sell() {
             console.log(data)
         });
 
+    refresh()
+}
 
+function refresh() {
+    location.reload();
 }
