@@ -26,6 +26,11 @@ Eléments réalisés en plus du cahier des charges :
 
     -/-
 
+# Serverweb
+
+Lancer le serveur web depuis la racine /front :
+php -S 127.0.0.1:8081
+
 # API
 
 ## User
