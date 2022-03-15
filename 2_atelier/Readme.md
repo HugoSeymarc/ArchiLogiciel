@@ -1,3 +1,65 @@
+# Rendu 
+
+LIEN REPO GIT : https://github.com/HugoSeymarc/ArchiLogiciel
+
+---
+
+    Membres du groupe :
+    -   ALBOUY Leo
+    -   SEYMARTC Hugo
+    -   DIB Nassim
+    -   DE IULIIS Lorenzo
+
+Eléments réalisés du cahier des charges :
+
+    - Création d’utilisateur et connexion
+    - Achat/vente de cartes sur la plateforme
+
+Eléments non-réalisés du cahier des charges :
+
+    -/-
+
+Eléments réalisés en plus du cahier des charges :
+
+    -/-
+
+# API
+
+## User
+
+| Routes  | Method | Paramètres |
+|---------|--------|-----------|
+| addUser | POST   |           |
+| getUser | GET    | userId    |
+
+## Card
+
+| Routes      | Method | Paramètres |
+|-------------|--------|-----------|
+| addCard     | POST   |           |
+| getCard     | GET    | cardId    |
+| getCards    | GET    |           |
+| getUserCard | GET    | userId    |
+
+## Authentification
+
+| Routes      | Method | Paramètres |
+|-------------|--------|-----------|
+| login       | POST   | userName, password|
+
+## Market
+
+| Routes      | Method | Paramètres |
+|-------------|--------|-----------|
+| buy         | POST   | userId, cardId|
+| sell        | POST   | userId, cardId|
+
+
+# Architecture 
+
+<img src=./archi.png>
+
+
 # Tableau Comparatif des Architectures
 
 |                           |MVC  |SOA  |Microservices  |
