@@ -2,10 +2,11 @@ function err_callback(error) {
     console.log(error);
 }
 
-const URL_API_POST = "https://asi2-backend-market.herokuapp.com/card";
+const URL_API_POST = "http://127.0.0.1:8080/card";
 
 function createCard() {
     console.log("onClick -> OK");
+    console.log(localStorage.getItem("user"))
 
     var data = {
         name: document.getElementsByName("name")[0].value,
@@ -18,17 +19,16 @@ function createCard() {
         defence: document.getElementsByName("defence")[0].value,
         attack: document.getElementsByName("attack")[0].value,
         price: document.getElementsByName("price")[0].value,
-        userId: null,
-        storeId: null
+        userId: localStorage.getItem("user"),
     }
 
 
     let context = {
         method: 'POST',
+        body: JSON.stringify(data),
         headers: {
             'Content-type': 'application/json; charset=UTF-8'
-        },
-        body: JSON.stringify(data)
+        }
     };
 
     fetch(URL_API_POST, context)
