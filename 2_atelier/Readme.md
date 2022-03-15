@@ -108,6 +108,7 @@ Les grandes étapes de fonctionnement de Maven sont:
 
 ### Qu’est ce qu’une application classique Entreprise Java Application  ? Donner un exemple d’usage avec web service, JSP, JavaBean,  EJB et JMS.
 
+Une application classique Entreprise Java Application est une spécification pour la plate-forme Java d'Oracle, destinée aux applications d'entreprise qui définit une plate-forme pour héberger et exécuter les applications, une suite de tests afin de vérifier la compatibilité, une réalisation de référence ainsi qu'un code script. Elle facilite le développement en architecture distribuée.
 
 ### Qu’est ce que Spring  ? qu’apporte Spring boot vis-à-vis de Spring  ?
 
@@ -119,9 +120,11 @@ SpringBoot permet d'éviter à l'utilisateur une répétition de code similaire 
 
 SpringBoot est une étape avancée qui se trouve sur la couche de IO Execution la couche de Spring IO Framework et est basé sur toute les fonctionnalités de Spring.
 
-Points communs:
-
-Différences:
+Comparaison avec JEE:
+ - SpringBoot est open-source, alors que Java EE est licensié par Oracle
+ - Java EE est utilisé pour le développement web alors que Spring Boot est utilisé pour du templating
+ - Java EE est plus rapide
+ - Spring Boot est basé sur 20 modules alors que Java EE est basé sur web
 
 ### Qu’est ce  qu’une annotation  ? Quels apports présentent les Annotations  ?
 
