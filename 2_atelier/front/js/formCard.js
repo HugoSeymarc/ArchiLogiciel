@@ -11,15 +11,17 @@ function createCard() {
     var data = {
         name: document.getElementsByName("name")[0].value,
         description: document.getElementsByName("description")[0].value,
-        family: document.getElementsByName("family")[0].value,
+        familyName: document.getElementsByName("family")[0].value,
         affinity: document.getElementsByName("affinity")[0].value,
-        imgUrl: document.getElementsByName("imgUrl")[0].value,
+        imgSrc: document.getElementsByName("imgUrl")[0].value,
         energy: document.getElementsByName("energy")[0].value,
         hp: document.getElementsByName("hp")[0].value,
         defence: document.getElementsByName("defence")[0].value,
         attack: document.getElementsByName("attack")[0].value,
         price: document.getElementsByName("price")[0].value,
-        userId: localStorage.getItem("user"),
+        user: {
+            id: localStorage.getItem("user")
+        },
     }
 
 

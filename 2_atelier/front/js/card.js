@@ -33,9 +33,10 @@ function callback(data) {
         newContent = clone.firstElementChild.innerHTML
             .replace(/{{energy}}/g, card.energy)
             .replace(/{{name}}/g, card.name)
-            .replace(/{{imgUrl}}/g, card.imgUrl)
+            .replace(/{{imgUrl}}/g, card.imgSrc)
             .replace(/{{description}}/g, card.description)
             .replace(/{{energy}}/g, card.energy)
+            .replace(/{{familyName}}/g, card.familyName)
             .replace(/{{hp}}/g, card.hp)
             .replace(/{{defence}}/g, card.defence)
             .replace(/{{attack}}/g, card.attack)
