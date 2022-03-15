@@ -12,12 +12,15 @@ LIEN REPO GIT : https://github.com/HugoSeymarc/ArchiLogiciel
 
 Eléments réalisés du cahier des charges :
 
+    - Web server avec springboot
+    - Service Rest Full
+    - Front HTML/JS
     - Création d’utilisateur et connexion
     - Achat/vente de cartes sur la plateforme
 
 Eléments non-réalisés du cahier des charges :
 
-    -/-
+    - La création de l'utlisateur se fait côté serveur
 
 Eléments réalisés en plus du cahier des charges :
 

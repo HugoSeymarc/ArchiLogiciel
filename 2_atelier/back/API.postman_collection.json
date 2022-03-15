@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"familyName\": \"fgsfsef\",\r\n    \"imgSrc\": \"sefszefzs\",\r\n    \"name\": \"sgrfsdfg\",\r\n    \"description\": \"grgdrg\",\r\n    \"hp\": 50,\r\n    \"energy\": 50,\r\n    \"attack\": 50,\r\n    \"defence\": 50,\r\n    \"price\": 2000\r\n}",
+							"raw": "{\r\n    \"familyName\": \"fgsfsef\",\r\n    \"imgSrc\": \"sefszefzs\",\r\n    \"name\": \"sgrfsdfg\",\r\n    \"description\": \"grgdrg\",\r\n    \"hp\": 50,\r\n    \"energy\": 50,\r\n    \"attack\": 50,\r\n    \"defence\": 50,\r\n    \"price\": 2000,\r\n    \"user\": {\r\n        \"id\":2\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,7 +23,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/card/1",
+							"raw": "http://127.0.0.1:8080/card",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -33,8 +33,7 @@
 							],
 							"port": "8080",
 							"path": [
-								"card",
-								"1"
+								"card"
 							]
 						}
 					},
@@ -63,7 +62,7 @@
 					"response": []
 				},
 				{
-					"name": "Get User Cards",
+					"name": "Get User Card",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -127,7 +126,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"amount\": 0,\n    \"userName\": \"test2\",\n    \"password\": \"test\"\n}",
+							"raw": "{\n    \"amount\": 0,\n    \"userName\": \"test\",\n    \"password\": \"test\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -157,7 +156,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/user/2",
+							"raw": "http://127.0.0.1:8080/user/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -168,7 +167,7 @@
 							"port": "8080",
 							"path": [
 								"user",
-								"2"
+								"1"
 							]
 						}
 					},

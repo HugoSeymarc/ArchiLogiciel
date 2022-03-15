@@ -61,7 +61,7 @@ function createUser() {
             "password": document.getElementsByName("password")[0].value
         }
 
-        const URL_API_BDD = "ONSAITPASENCORE";
+        const URL_API_BDD = "";
 
         let context = {
             method: 'POST',

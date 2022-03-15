@@ -30,7 +30,7 @@ function callbackUserLogin(response) {
         localStorage.setItem('user',  JSON.stringify(response.response))
         window.location = '/index.html'
     } else {
-        console.log('aie', response.response.message)
+        console.log('error', response.response.message)
         let error = document.querySelector('#error');
         error.innerHTML = response.response.message;
     }
