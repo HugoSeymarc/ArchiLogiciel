@@ -58,9 +58,11 @@ SpringBoot permet d'éviter à l'utilisateur une répétition de code similaire 
 
 SpringBoot est une étape avancée qui se trouve sur la couche de IO Execution la couche de Spring IO Framework et est basé sur toute les fonctionnalités de Spring.
 
-Points communs:
-
-Différences:
+Comparaison avec JEE:
+ - SpringBoot est open-source, alors que Java EE est licensié par Oracle
+ - Java EE est utilisé pour le développement web alors que Spring Boot est utilisé pour du templating
+ - Java EE est plus rapide
+ - Spring Boot est basé sur 20 modules alors que Java EE est basé sur web
 
 ### Qu’est ce  qu’une annotation  ? Quels apports présentent les Annotations  ?
 
