@@ -3,15 +3,15 @@
 |                           |MVC  |SOA  |Microservices  |
 |---------------------------|-----|-----|---------------|
 |**Architecture**           |Architecture simple contenant un modèle pour le backend, une vue pour le frontend, et un contrôleur pour faire le lien entre le modèle et la vue      |Conçue pour partager les ressources entre les services     |Conçue pour accueillir des services pouvant fonctionner de manière autonome               |
-|**Partage de composants**  |     |Implique souvent le partage de composants     |N'implique généralement pas de partage de composants               |
+|**Partage de composants**  | Implique le partage de composants    |Implique souvent le partage de composants     |N'implique généralement pas de partage de composants               |
 |**Granularité**            |Services minimes     |Services grands et meilleure modularité     |Services affinés               |
 |**Stockage de données**    |Le stockage se fait dans le modèle, par exemple dans un tableau créé dans le modèle     |Implique le partage du stockage des données entre les services     |Chaque service bénéficie d'un stockage de données indépendant               |
-|**Gouvernance**            |     |Protocoles de gouvernance communs entre équipes     |Nécessite une collaboration entre équipes               |
-|**Taille et portée**   |     |Pertinent pour les intégrations à grande échelle     |Pertinent pour des applications de petite taille, basées sur le web               |
+|**Gouvernance**            |Nécessite une collaboration entre équipes     |Protocoles de gouvernance communs entre équipes     |Nécessite une collaboration entre équipes               |
+|**Taille et portée**   | Pour les intégration à grande échelle    |Pertinent pour les intégrations à grande échelle     |Pertinent pour des applications de petite taille, basées sur le web               |
 |**Communication**        |Communiquer par le biais d'un Contrôleur     |Communiquer par le biais d'un ESB     |Communiquer par le biais d'une couche API               |
-|**Couplage et cohésion**          |     |S'appuie sur un partage des ressources     |S'appuie sur un contexte délimité pour le couplage               |
-|**Services à distance**   |     |Utilise des protocoles comme SOAP et AMQP     |Utilise REST et JMS               |
-|**Déploiement**    |     |Moins de flexibilité dans le déploiement              |Déploiement rapide et faci
+|**Couplage et cohésion**          |S'appuie sur des ressources externes     |S'appuie sur un partage des ressources     |S'appuie sur un contexte délimité pour le couplage               |
+|**Services à distance**   |Utilise REST     |Utilise des protocoles comme SOAP et AMQP     |Utilise REST et JMS               |
+|**Déploiement**    |Déploiement moyennement flexible     |Moins de flexibilité dans le déploiement              |Déploiement rapide et facile
 
 # Questions
 
