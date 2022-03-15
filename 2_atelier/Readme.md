@@ -46,6 +46,7 @@ Les grandes étapes de fonctionnement de Maven sont:
 
 ### Qu’est ce qu’une application classique Entreprise Java Application  ? Donner un exemple d’usage avec web service, JSP, JavaBean,  EJB et JMS.
 
+Une application classique Entreprise Java Application est une spécification pour la plate-forme Java d'Oracle, destinée aux applications d'entreprise qui définit une plate-forme pour héberger et exécuter les applications, une suite de tests afin de vérifier la compatibilité, une réalisation de référence ainsi qu'un code script. Elle facilite le développement en architecture distribuée.
 
 ### Qu’est ce que Spring  ? qu’apporte Spring boot vis-à-vis de Spring  ?
 
