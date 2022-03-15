@@ -40,8 +40,8 @@ public class CardService {
 		return cL;
 	}
 
-	public Card addCard(Card c, int userId) {
-		Optional<User> uOpt = uRepository.findById(userId);
+	public Card addCard(Card c) {
+		Optional<User> uOpt = uRepository.findById(c.getUser().getId());
 		User user = uOpt.get();
 		c.setUser(user);
 		return cRepository.save(c);

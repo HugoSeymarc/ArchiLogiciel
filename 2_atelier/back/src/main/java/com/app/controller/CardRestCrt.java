@@ -38,9 +38,8 @@ public class CardRestCrt {
 		return cService.getCard(current_id);
 	}
 	
-	@PostMapping("/card/{userId}")
-	public Card addCard(@RequestBody Card c, @PathVariable String userId){
-		int current_id=Integer.valueOf(userId);
-		return cService.addCard(c, current_id);
+	@PostMapping("/card")
+	public Card addCard(@RequestBody Card c){
+		return cService.addCard(c);
 	}
 }
