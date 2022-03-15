@@ -1,3 +1,18 @@
+# Tableau Comparatif des Architectures
+
+|                           |MVC  |SOA  |Microservices  |
+|---------------------------|-----|-----|---------------|
+|**Architecture**           |     |Conçue pour partager les ressources entre les services     |Conçue pour accueillir des services pouvant fonctionner de manière autonome               |
+|**Partage de composants**  |     |Implique souvent le partage de composants     |N'implique généralement pas de partage de composants               |
+|**Granularité**            |     |Des services plus grands et plus modulaires     |Services affinés               |
+|**Stockage de données**    |     |Implique le partage du stockage des données entre les services     |Chaque service bénéficie d'un stockage de données indépendant               |
+|**Gouvernance**            |     |Protocoles de gouvernance communs entre équipes     |Nécessite une collaboration entre équipes               |
+|**Partage de composants**  |     |Pertinent pour les intégrations à grande échelle     |Pertinent pour des applications de petite taille, basées sur le web               |
+|**Taille et portée**       |     |Communiquer par le biais d'un ESB     |Communiquer par le biais d'une couche API               |
+|**Communication**          |     |S'appuie sur un partage des ressources     |S'appuie sur un contexte délimité pour le couplage               |
+|**Couplage et cohésion**   |     |Utilise des protocoles comme SOAP et AMQP     |Utilise REST et JMS               |
+|**Services à distance**    |     |Moins de flexibilité dans le déploiement     |Déploiement rapide et facile               |
+
 # Questions
 
 
