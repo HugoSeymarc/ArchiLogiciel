@@ -3,6 +3,8 @@ let context = {
     method: 'GET'
 };
 
+let cardId = 0
+
 fetch(URL_API_GET, context)
     .then(data => data.json())
     .then(datajson => callback(datajson))
@@ -29,7 +31,8 @@ function callback(data) {
             .replace(/{{energy}}/g, card.energy)
             .replace(/{{attack}}/g, card.attack)
             .replace(/{{defence}}/g, card.defence)
-            .replace(/{{price}}/g, card.price);
+            .replace(/{{price}}/g, card.price)
+            .replace(/{{id}}/g, card.id);
         clone.firstElementChild.innerHTML = newContent;
 
         let cardContainer = document.querySelector("#tableContent");

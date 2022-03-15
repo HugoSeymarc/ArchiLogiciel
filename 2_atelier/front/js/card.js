@@ -3,6 +3,8 @@ let context = {
     method: 'GET'
 };
 
+
+
 fetch(URL_API_GET, context)
     .then(data => data.json())
     .then(datajson => callback(datajson))
@@ -19,13 +21,13 @@ function getRandomInt(max) { // DOnne un nombre aleatoire
 
 function callback(data) {
 
-    let template = document.querySelector("#selectedCard");
 
-    let button = "buy";
+
+    let template = document.querySelector("#selectedCard");
 
     for (const card of data) {
 
-        // console.log(card)
+        console.log(card)
         like = getRandomInt(1000);
 
         let clone = document.importNode(template.content, true);
@@ -41,7 +43,8 @@ function callback(data) {
             .replace(/{{defence}}/g, card.defence)
             .replace(/{{attack}}/g, card.attack)
             .replace(/{{price}}/g, card.price)
-            .replace(/{{like}}/g, like);
+            .replace(/{{like}}/g, like)
+            .replace(/{{id}}/g, card.id);
         clone.firstElementChild.innerHTML = newContent;
 
         let cardContainer = document.querySelector("#gridContainer");
