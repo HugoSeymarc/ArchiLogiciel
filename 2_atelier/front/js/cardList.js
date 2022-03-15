@@ -34,7 +34,7 @@ let cardList = [{
 
 ]
 
-const URL_API_GET = "https://asi2-backend-market.herokuapp.com/cards";
+const URL_API_GET = "http://127.0.0.1:8080/cards/" + userID;
 let context = {
     method: 'GET'
 };

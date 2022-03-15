@@ -1,19 +1,20 @@
-const URL_API_BDD = "ONSAITPASENCORE";
+const URL_API_BDD = "http://127.0.0.1:8080/login";
 
 function err_callback(error) {
     console.log(error);
 }
 
-function login() {
+function userLogin() {
     console.log("login -> Clicked");
 
     var data = {
-        "login": document.getElementsByName("name")[0].value,
+        "userName": document.getElementsByName("login")[0].value,
         "password": document.getElementsByName("password")[0].value
     }
 
     let context = {
-        method: 'GET',
+        method: 'POST',
+        mode: 'no-cors',
         body: JSON.stringify(data)
     };
 
