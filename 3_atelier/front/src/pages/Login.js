@@ -1,9 +1,30 @@
-const Home = () => {
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
-    return(
-        <p>TEST</p>
-    );
+
+const Login = () => {
+    const navigation = useNavigate();
     
+    const handleSubmit = () =>  {
+        navigation(`/market`);
+    }
+
+    return (
+        <>
+            <p>Login</p>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    Nom :
+                    <input type="text" name="name" />
+                </label>
+                <label>
+                    Password :
+                    <input type="text" name="name" />
+                </label>
+                <input type="submit" value="Envoyer" />
+            </form>
+        </>
+    );
 };
 
-export default Home;
+export default Login;
