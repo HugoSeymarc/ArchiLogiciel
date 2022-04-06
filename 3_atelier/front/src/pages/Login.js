@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const navigation = useNavigate();
-    
-    const handleSubmit = () =>  {
+
+    const handleSubmit = () => {
         navigation(`/market`);
     }
 

@@ -1,13 +1,16 @@
-const Button = () => {
+import React from 'react';
 
-    return(
+const Button = (props) => {
+
+    console.log(props)
+
+    return (
         <>
-        <p>Button</p>
-        <button>
-            Activer les lasers
-        </button>
+            <button>
+                {props.title}
+            </button>
         </>
-    );    
+    );
 };
 
 export default Button;
