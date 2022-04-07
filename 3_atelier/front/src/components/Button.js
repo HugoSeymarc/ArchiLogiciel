@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const ButtonCustom = (props) => {
     const navigation = useNavigate();
-    console.log(props)
+    // console.log(props)
 
     return (
         <>
