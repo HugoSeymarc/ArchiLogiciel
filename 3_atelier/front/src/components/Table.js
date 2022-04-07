@@ -4,7 +4,7 @@ import TableHead from './TableHead';
 import TableRow from './TableRowPlay';
 
 
-const TableRoomList = ({ head, body }) => {
+const TableRoomList = ({ head, body, component }) => {
 
     console.log(head)
     console.log(body)
@@ -23,7 +23,8 @@ const TableRoomList = ({ head, body }) => {
                 <tbody>
                     {body.map((item) => {
                         // console.log('JE SUIS LAAAAAA', item)
-                        return <TableRow key={item.id} data={item} />
+                        // return <TableRow key={item.id} data={item} />
+                        {component}
                     })}
                 </tbody>
             </Table>

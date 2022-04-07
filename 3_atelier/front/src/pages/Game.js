@@ -1,17 +1,18 @@
 import React from 'react';
 import Header from '../components/Header';
 import Table from '../components/Table';
+import TableRowGame from '../components/TableRowGame';
 
 
 const headData = ["Name", "Description", "Familly", "Affinity", "Energy", "HP"]
-const bodyData = [{ "id": "A", "room": "Steph", "bet": "350" }, { "id": "B", "room": "Antoine", "bet": "50" }, { "id": "C", "room": "Jackson", "bet": "150" }, { "id": "D", "room": "Peter", "bet": "250" }]
+const bodyData = [{ "name": "salamèche", "description": "Ce truc est un pokemon ", "familly": "Feu", "affinity":"5", "energy":"100", "hp":"15" }]
 
 const Game = (props) => {
 
     return (
         <>  
             <Header/>
-            <Table head={headData} body={bodyData} />
+            <Table head={headData} body={bodyData} component={<TableRowGame/>}/>
         </>
     );
 };
