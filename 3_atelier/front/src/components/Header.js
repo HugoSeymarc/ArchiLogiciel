@@ -1,7 +1,22 @@
-const Header = () => {
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
+
+const Header = (props) => {
 
     return(
-        <p>TEST</p>
+        <>
+            <Row>
+                <Col>
+                    <p>{props.balance}$</p>
+                </Col>
+                <Col>
+                    <p>{props.title}</p>
+                </Col>
+                <Col>
+                    <p>{props.user}</p>
+                </Col>
+            </Row>
+        </>
     );    
 };
 

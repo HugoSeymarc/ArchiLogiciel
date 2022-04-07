@@ -1,16 +1,17 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
-const Button = (props) => {
+const ButtonCustom = (props) => {
 
     console.log(props)
 
     return (
         <>
-            <button>
+            <Button variant="light">
                 {props.title}
-            </button>
+            </Button>
         </>
     );
 };
 
-export default Button;
+export default ButtonCustom;
