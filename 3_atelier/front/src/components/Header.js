@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import Balance from './Balance';
+import User from './User';
 
 const Header = (props) => {
 
@@ -7,13 +9,14 @@ const Header = (props) => {
         <>
             <Row>
                 <Col>
-                    <p>{props.balance}$</p>
+                    {/* <p>{props.balance}$</p> */}
+                    <Balance/>
                 </Col>
                 <Col>
                     <p>{props.title}</p>
                 </Col>
                 <Col>
-                    <p>{props.user}</p>
+                    <User/>
                 </Col>
             </Row>
         </>
