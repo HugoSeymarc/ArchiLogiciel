@@ -6,7 +6,8 @@ const Button = (props) => {
 
     return (
         <>
-            <button>
+            <button style={{backgroundColor:props.color, width: props.width, height: props.height}}>
+                <img src={props.icon} width={props.iconWidth}/>
                 {props.title}
             </button>
         </>
