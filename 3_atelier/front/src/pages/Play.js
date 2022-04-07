@@ -11,9 +11,8 @@ const Market = () => {
     return (
         <>
             <p>Market</p>
-            {/* <Button title={"BUY"} color={"lightgrey"}  width={"25%"} height={"200px"} icon={process.env.PUBLIC_URL + "./logo192.png"} iconWidth={"15%"}/> */}
             <Table head={headData} body={bodyData}/>
-            
+            <Button title={"Create Room"} href={`/game`} color={"light"} width={"15%"} height={"350px"} icon={process.env.PUBLIC_URL + "./logo192.png"} iconWidth={"15%"}/>            
         </>
     );
 };
