@@ -5,9 +5,10 @@ const TableRow = ({ data }) => {
     console.log("duTexte",data)
     return (
         <tr>
-            {data.map((item) => {
-                return <td key={item}>{item}</td>;
-            })}
+            <td key={data}>{data.id}</td>
+            <td>{data.room}</td>
+            <td>{data.bet}</td>
+            <td>Button</td>
         </tr>
     );
 };

@@ -5,6 +5,7 @@ import Table from '../components/Table';
 const headData = ["Room", "User", "Bet", "GO"]
 const bodyData = [{"id":"A", "room":"Steph", "bet":"350"}, {"id":"B", "room":"Antoine", "bet":"50"},{"id":"C", "room":"Jackson", "bet":"150"},{"id":"D", "room":"Peter", "bet":"250"}]
 
+console.log(bodyData)
 const Market = () => {
 
     return (
