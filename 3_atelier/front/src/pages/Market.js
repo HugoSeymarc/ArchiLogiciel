@@ -7,9 +7,9 @@ const Market = () => {
         <>
             <Header balance={5000} user={"Joe"}/>
             <p>Market</p>
-            <Button title={"BUY"} onClick={ navigation(`/buy`)}/>
-            <Button title={"SELL"} onClick={ navigation(`/sell`)}/>
-            <Button title={"PLAY"} onClick={ navigation(`/game`)}/>
+            <Button title={"BUY"} href={`/buy`}/>
+            <Button title={"SELL"} href={`/sell`}/>
+            <Button title={"PLAY"} href={`/game`}/>
         </>
     );
 };
