@@ -1,11 +1,12 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table'
+import TableHead from './TableHead';
 import TableRow from './TableRow';
 
 
-const TableRoomList = ({head, body}) => {
+const TableRoomList = ({ head, body }) => {
 
-    console.log(head)   
+    console.log(head)
     console.log(body)
 
     return (
@@ -13,15 +14,14 @@ const TableRoomList = ({head, body}) => {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>{head[0]}</th>
-                        <th>{head[1]}</th>
-                        <th>{head[2]}</th>
-                        <th>{head[3]}</th>
+                        {head.map((item) => {
+                            return <TableHead key={item} data={item} />
+                        })}
                     </tr>
                 </thead>
                 <tbody>
-                    {body.map((item) => { 
-                        return <TableRow key={item} data={item}/>
+                    {body.map((item) => {
+                        return <TableRow key={item} data={item} />
                     })}
                 </tbody>
             </Table>
