@@ -1,7 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table'
 import TableHead from './TableHead';
-import TableRow from './TableRow';
+import TableRow from './TableRowPlay';
 
 
 const TableRoomList = ({ head, body }) => {
@@ -15,13 +15,15 @@ const TableRoomList = ({ head, body }) => {
                 <thead>
                     <tr>
                         {head.map((item) => {
+                            console.log('JE SUIS LAAAfdzefzefzefzfzefzefzfAAA', item)
                             return <TableHead key={item} data={item} />
                         })}
                     </tr>
                 </thead>
                 <tbody>
                     {body.map((item) => {
-                        return <TableRow key={item} data={item} />
+                        // console.log('JE SUIS LAAAAAA', item)
+                        return <TableRow key={item.id} data={item} />
                     })}
                 </tbody>
             </Table>

@@ -1,11 +1,12 @@
 import React from "react";
 
 
-const TableHead = ({ item }) => {
+const TableHead = ({ data }) => {
+    console.log('fgezgergergergergergergegr', data)
     return (
-
-        <td title={item}> {item} </td>
-
+        <td title={data}>
+            {data}
+        </td>
     );
 };
 
