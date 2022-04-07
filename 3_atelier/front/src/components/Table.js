@@ -1,4 +1,4 @@
-import BootstrapTable from 'react-bootstrap-table-next';
+// import BootstrapTable from 'react-bootstrap-table-next';
 
 const cards = [
     { id: 12, name: "Item 12", price: 12.5 },
