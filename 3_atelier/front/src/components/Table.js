@@ -22,9 +22,8 @@ const TableRoomList = ({ head, body, component }) => {
                 </thead>
                 <tbody>
                     {body.map((item) => {
-                        // console.log('JE SUIS LAAAAAA', item)
-                        // return <TableRow key={item.id} data={item} />
-                        {component}
+                        console.log('JE SUIS LAAAfdzefzefzefzfzefzefzfAAA', item)
+                        return <TableRow key={item.id} data={item} component={component} />
                     })}
                 </tbody>
             </Table>
