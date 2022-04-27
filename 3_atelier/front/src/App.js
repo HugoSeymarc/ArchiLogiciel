@@ -1,10 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Market from './pages/Market';
-import Play from './pages/Play';
 import Buy from './pages/Buy';
-import Sell from './pages/Sell';
-import Game from './pages/Game';
 
 function App() {
   return (
