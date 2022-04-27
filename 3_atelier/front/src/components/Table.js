@@ -4,7 +4,7 @@ import TableHead from './TableHead';
 import TableRow from './TableRowPlay';
 
 
-const TableRoomList = ({ head, body, component }) => {
+const TableRoomList = ({ head, body }) => {
 
     console.log(head)
     console.log(body)
@@ -21,10 +21,17 @@ const TableRoomList = ({ head, body, component }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {body.map((item) => {
+                    {/* {body.map((item) => {
                         // console.log('JE SUIS LAAAAAA', item)
                         // return <TableRow key={item.id} data={item} />
-                        {component}
+                    })} */}
+                    {body.map((item) => {
+                        console.log('JE SUIS LAAAAAA', item)
+                        return(
+                            <tr>
+                                <td key={item.id}>TEST</td>
+                            </tr>
+                        );
                     })}
                 </tbody>
             </Table>

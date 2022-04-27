@@ -12,7 +12,7 @@ const Game = (props) => {
     return (
         <>  
             <Header/>
-            <Table head={headData} body={bodyData} component={<TableRowGame/>}/>
+            <Table head={headData} body={bodyData}/>
         </>
     );
 };
