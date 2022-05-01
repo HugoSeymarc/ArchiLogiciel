@@ -9,6 +9,4 @@ const TableHeadItem = ({ item }) => {
     );
 };
 
-
-
 export default TableHeadItem;

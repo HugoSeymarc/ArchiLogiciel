@@ -1,9 +1,30 @@
 import React from 'react';
-import Table from '../components/Table';
+import Table from '../components/playTable/Table';
 import { Modal, Button, Form } from 'react-bootstrap';
+import Header from '../components/Header';
 
-const headData = ["Room", "User", "Bet", "GO"]
-const bodyData = [{ "id": "A", "room": "Steph", "bet": "350" }, { "id": "B", "room": "Antoine", "bet": "50" }, { "id": "C", "room": "Jackson", "bet": "150" }, { "id": "D", "room": "Peter", "bet": "250" }]
+const headData = ["Room","Create by", "Bet"]
+const bodyData = [
+    { 
+        "room":"Room1",
+        "user":"Steph", 
+        "bet": "400" 
+    },
+    { 
+        "room":"Room2",
+        "user":"Antoine", 
+        "bet": "250" 
+    },
+    { 
+        "room":"Room3",
+        "user":"Patrick", 
+        "bet": "550" 
+    },
+    { 
+        "room":"Room4",
+        "user":"José", 
+        "bet": "350" 
+    }]
 
 const MyVerticallyCenteredModal = (props) => {
     return (
@@ -45,7 +66,7 @@ const Market = () => {
 
     return (
         <>
-            <p>Market</p>
+            <Header title="Play"/>
             <Table head={headData} body={bodyData} />
             <Button variant="primary" onClick={() => setModalShow(true)}>Create Room</Button>
             <MyVerticallyCenteredModal
