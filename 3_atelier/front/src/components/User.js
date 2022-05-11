@@ -6,7 +6,7 @@ const User = (props) => {
 
     return(
         <>
-            <p>Jhoe</p>
+            <h2>Jhoe</h2>
         </>
     );
 };

@@ -11,7 +11,7 @@ const TableRowBuy = ({ data }) => {
             <td>{data.type}</td>
             <td>{data.pv}</td>
             <td>{data.price}</td>
-            <td><Button title={"Buy"} href={`/game`}/></td>
+            <td><Button title={"Buy"} href={`/buy`}/></td>
         </tr>
     );
 };
