@@ -5,6 +5,7 @@ import Buy from './pages/Buy';
 import Game from './pages/Game';
 import Sell from './pages/Sell';
 import Play from './pages/Play';
+import Room from './pages/Room';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/buy' element={<Buy/>} />
           <Route path='/sell' element={<Sell/>} />
           <Route path='/game' element={<Game/>} />
+          <Route path='/play/room' element={<Room/>} />
         </Routes>
       </Router>
   );

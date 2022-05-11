@@ -6,7 +6,7 @@ const Login = () => {
     const navigation = useNavigate();
 
     const handleSubmit = () => {
-        navigation(`/market`);
+        navigation(`/main`);
     }
 
     return (

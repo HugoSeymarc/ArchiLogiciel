@@ -9,11 +9,11 @@ const Header = (props) => {
         <>
             <Row>
                 <Col>
-                    {/* <p>{props.balance}$</p> */}
+                    {/* <p>{props.balance   }$</p> */}
                     <Balance/>
                 </Col>
                 <Col>
-                    <p>{props.title}</p>
+                    <h2>{props.title}</h2>
                 </Col>
                 <Col>
                     <User/>
