@@ -1,6 +1,7 @@
 import React from 'react';
 import Table from '../components/Table';
 import { Modal, Button, Form } from 'react-bootstrap';
+import Header from '../components/Header';
 
 const headData = ["Room", "User", "Bet", "GO"]
 const bodyData = [{ "id": "A", "room": "Steph", "bet": "350" }, { "id": "B", "room": "Antoine", "bet": "50" }, { "id": "C", "room": "Jackson", "bet": "150" }, { "id": "D", "room": "Peter", "bet": "250" }]
