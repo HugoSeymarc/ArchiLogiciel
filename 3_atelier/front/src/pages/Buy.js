@@ -54,9 +54,8 @@ const Buy = () => {
         
     return (
         <>
-            <Header title="Buy"/>
+            <Header title="Market"/>
             <Table head={headData} body={bodyData} />
-            <Button variant="primary" onClick={() => setModalShow(true)}>Create Room</Button>
         </>
     );
 };
