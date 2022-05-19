@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  reverse-proxy:
+    image: nginx
+    volumes:
+      - ./confngx.conf:/etc/nginx/nginx.conf
+      
+    network_mode: host
+

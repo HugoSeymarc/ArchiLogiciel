@@ -2,7 +2,14 @@ import React from 'react';
 import Table from '../components/buyTable/Table';
 import Header from '../components/Header';
 import { Modal, Button, Form } from 'react-bootstrap';
+import {useEffect} from "react";
 
+
+
+const fetchData = () => {
+    return fetch("http://localhost:8085/cards")
+          .then((response) => response.json())
+          .then((data) => console.log("TETETETETETES",data));}
 
 const headData = ["Id","Name", "Description", "Type","PV","Price"]
 const bodyData = [
@@ -41,7 +48,10 @@ const bodyData = [
 
 const Buy = () => {
     const [modalShow, setModalShow] = React.useState(false);
-
+    useEffect(() => {
+        fetchData();
+        }, []);
+        
     return (
         <>
             <Header title="Market"/>
