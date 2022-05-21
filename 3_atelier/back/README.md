@@ -1,11 +1,10 @@
-TO DO: Renommer user-service
+"http://localhost:8080/users";
 
-	RestTemplate restTemplate = new RestTemplate();
-	String userResourceUrl
-	  = "http://localhost:8080/users";
-	ResponseEntity<String> response
-	  = restTemplate.getForEntity(userResourceUrl, String.class);
+Pour modifier les acces BDD:
+- Aller dans chaque micro-service -> src/main/resources/application.properties
+- Modifier spring.datasource.username et spring.datasource.password qui sont les accès à vottre base de données
 
+Il faut ensuite créer pour chaque micro service la bdd qui correspond. EX: room-service
 
 - 8080 = card
 - 8081 = market
