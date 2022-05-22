@@ -13,21 +13,19 @@ LIEN REPO GIT : https://github.com/HugoSeymarc/ArchiLogiciel
     Eléments réalisés du cahier des charges par membres du groupe :
     
     -   ALBOUY Leo:
-        -
-        -
-        -
+        - découpage micro-services
+        - back
+
     -   SEYMARTC Hugo
-        -
-        -
-        -
+        - front
+
     -   DIB Nassim
-        -
-        -
-        -
+        - front
+        - reverse proxy
+
     -   DE IULIIS Lorenzo
-        -
-        -
-        -
+        - rendu
+        - questions
     
 # Composant et props :
 
