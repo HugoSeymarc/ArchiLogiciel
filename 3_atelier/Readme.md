@@ -121,15 +121,17 @@ Sonar est un outil de reporting sur la qualités du code source en continu. Il p
 L'intégration continu est une méthode consistant à importer de façon régulière des modifications sur un référentiel centralisé, typiquement pour chaque étapes d'un test de non-régressives.
 
 Avantages:
-	- Possibilité de recherche précoce des erreurs
-	- Feedback permanent
-	- Pas de surcharge contrairement à une seule grande intégration finale
-	- Enregistrement précis des modifications
-	- Disponibilité continue d’une version actuelle opérationnelle
-	- Nécessité d’un travail progressif
+
+	-	Possibilité de recherche précoce des erreurs
+	-	Feedback permanent
+	-	Pas de surcharge contrairement à une seule grande intégration finale
+	-	Enregistrement précis des modifications
+	-	Disponibilité continue d’une version actuelle opérationnelle
+	-	Nécessité d’un travail progressif
 
 Inconvénients:
-	- Conversion de processus habituels
-	- Nécessite des serveurs et des environnements supplémentaires
-	- Nécessité de mettre au point des processus de test adaptés
-	- Si plusieurs développeurs souhaitent intégrer leur code approximativement au même moment, des délais d’attente peuvent survenir
+
+	-	Conversion de processus habituels
+	-	Nécessite des serveurs et des environnements supplémentaires
+	-	Nécessité de mettre au point des processus de test adaptés
+	-	Si plusieurs développeurs souhaitent intégrer leur code approximativement au même moment, des délais d’attente peuvent survenir
