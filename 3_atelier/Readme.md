@@ -21,10 +21,12 @@ LIEN REPO GIT : https://github.com/HugoSeymarc/ArchiLogiciel
 
     -   DIB Nassim
         - front
+        - architecture logicielle
         - reverse proxy
 
     -   DE IULIIS Lorenzo
         - rendu
+        - architecture logicielle
         - questions
     
 # Composant et props :
